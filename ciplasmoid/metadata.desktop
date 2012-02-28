@@ -1,0 +1,21 @@
+[Desktop Entry]
+Name=CI Plasmoid
+Comment=Continuous Integration Monitor
+Type=Service
+Icon=utilities-log-viewer
+
+X-Plasma-API=declarativeappletscript
+X-Plasma-MainScript=ui/ciplasmoid.qml
+X-Plasma-DefaultSize=32,32
+X-Plasma-NotificationArea=true
+
+X-KDE-ServiceTypes=Plasma/Applet
+X-KDE-PluginInfo-Author=Aki Koskinen
+X-KDE-PluginInfo-Email=akikoskinen@yahoo.com
+X-KDE-PluginInfo-Website=http://github.com/akikoskinen/ciplasmoid
+X-KDE-PluginInfo-Category=Development Tools
+X-KDE-PluginInfo-Name=ciplasmoid
+X-KDE-PluginInfo-Version=0.0
+X-KDE-PluginInfo-Depends=
+#X-KDE-PluginInfo-License=
+X-KDE-PluginInfo-EnabledByDefault=true
