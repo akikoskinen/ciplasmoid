@@ -1,0 +1,15 @@
+Some notes about developing plasmoids
+
+List installed plasmoids' names: plasmapkg --list
+
+Install a plasmoid for the current user: plasmapkg --install <path>
+Upgrade a plasmoid for the current user: plasmapkg --upgrade <path>
+Remove an installed plasmoid: plasmapkg --remove <name>
+
+Run a plasmoid quickly in the viewer: plasmoidviewer <name>|<path>
+
+<name> above refers to plasmoid's name as specified in the metadata.desktop
+file. Those names are also printed by the 'plasmapkg --list' command.
+
+<path> above refers to a file system path where a plasmoid file structure
+resides.
