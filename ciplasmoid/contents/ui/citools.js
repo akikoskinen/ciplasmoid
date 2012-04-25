@@ -1,4 +1,5 @@
-var OKCodes = ["stable", "back to normal"];
+// While a build is in progress the status is reported with a question mark
+var OKCodes = ["stable", "back to normal", "?"];
 
 function handleItems(items) {
 	var jenkinsTitleRE = /(.*) #[0-9]+ \((.*)\)/;
