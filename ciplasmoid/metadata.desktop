@@ -9,7 +9,7 @@ X-Plasma-MainScript=ui/ciplasmoid.qml
 X-Plasma-DefaultSize=32,32
 X-Plasma-NotificationArea=true
 
-X-KDE-ServiceTypes=Plasma/Applet
+X-KDE-ServiceTypes=Plasma/Applet,Plasma/PopupApplet
 X-KDE-PluginInfo-Author=Aki Koskinen
 X-KDE-PluginInfo-Email=akikoskinen@yahoo.com
 X-KDE-PluginInfo-Website=http://github.com/akikoskinen/ciplasmoid

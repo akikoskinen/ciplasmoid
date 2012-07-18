@@ -2,12 +2,23 @@ import QtQuick 1.0
 import org.kde.plasma.core 0.1 as PlasmaCore
 import "citools.js" as CITools
 
-Image {
-	id: icon
-	source: "plasmapackage:/images/success.png"
+Item {
+	id: root
+	property bool allOK: true
+	
+	property int minimumWidth: childrenRect.width
+	property int minimumHeight: childrenRect.height
 
 	Component.onCompleted: {
 		plasmoid.addEventListener('ConfigChanged', configChanged)
+
+		root.allOK = false
+		root.allOK = true
+	}
+	
+	onAllOKChanged: {
+		var iconName = root.allOK ? "weather-clear" : "weather-storm"
+		plasmoid.setPopupIconByName(iconName)
 	}
 	
 	function configChanged() {
@@ -30,6 +41,10 @@ Image {
 		interval: 1000
 		running: true
 		repeat: false
-		onTriggered: icon.configChanged()
+		onTriggered: root.configChanged()
+	}
+	
+	Text {
+		text: root.allOK ? "Everythings good" : "Some failures"
 	}
 }

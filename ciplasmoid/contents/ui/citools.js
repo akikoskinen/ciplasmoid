@@ -13,9 +13,5 @@ function handleItems(items) {
 		}
 	}
 	
-	if (allOK) {
-		icon.source = "plasmapackage:/images/success.png"
-	} else {
-		icon.source = "plasmapackage:/images/failure.png"
-	}
+	root.allOK = allOK
 }
